@@ -1,7 +1,7 @@
 package teachmeskills.lesson6.CreditCards;
 
-import teachmeskills.lesson6.CreditCards.service.CreditCardService;
 import teachmeskills.lesson6.CreditCards.entity.CreditCard;
+import teachmeskills.lesson6.CreditCards.service.CreditCardService;
 
 import java.util.Scanner;
 
