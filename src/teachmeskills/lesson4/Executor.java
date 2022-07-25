@@ -58,7 +58,6 @@ public class Executor {
         System.out.println();
         System.out.println("Введите удаляемый символ");
 
-
         value = scanner.nextInt();
         int k = 0;
 
