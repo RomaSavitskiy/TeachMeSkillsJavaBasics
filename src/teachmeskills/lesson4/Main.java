@@ -10,8 +10,6 @@ public class Main
         Scanner scanner = new Scanner(System.in);
         Executor executor = new Executor();
 
-
-
         while(true)
         {
             System.out.println("Выберите номер задачи");

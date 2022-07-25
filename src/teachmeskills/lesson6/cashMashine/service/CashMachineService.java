@@ -3,11 +3,10 @@ package teachmeskills.lesson6.cashMashine.service;
 import java.util.Scanner;
 
 public class CashMachineService {
-
     Scanner scanner = new Scanner(System.in);
+
     public long[] addedMoney(long[] arrayMoney) {
         System.out.println("Введите количество добавляемых купюр по 20, по 50 и по 100 соответсвенно");
-
 
         long amountAdded20 = scanner.nextLong();
         long amountAdded50 = scanner.nextLong();
@@ -30,7 +29,6 @@ public class CashMachineService {
         long amountWithdrawal100 = 0;
 
         while (flag == true) {
-
             System.out.println("Введите корректные значения:");
             amountWithdrawal20 = scanner.nextLong();
             amountWithdrawal50 = scanner.nextLong();

@@ -6,7 +6,6 @@ import teachmeskills.lesson6.Computer.entity.RAM;
 
 public class Start {
     public static void main(String[] args) {
-
         int computerPrice1 = 100;
         String computerModel = "HP";
         Computer computer1 = new Computer(computerPrice1, computerModel);

@@ -43,7 +43,6 @@ public class Executor
         System.out.println();
     }
 
-
     public void outputSumLines()
     {
         int[][] array = {{1,2,4,4}, {1,1,1,10}, {0,3,4,6}};
@@ -135,7 +134,6 @@ public class Executor
             System.out.println();
         }
     }
-
 
     public void threeDimensionalArray()
     {
@@ -333,8 +331,6 @@ public class Executor
             System.out.println();
         }
 
-
-
         System.out.println();
         System.out.println("Отсортированный: массив");
 
@@ -347,5 +343,4 @@ public class Executor
             System.out.println();
         }
     }
-
 }

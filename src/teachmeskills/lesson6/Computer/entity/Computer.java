@@ -7,7 +7,6 @@ public class Computer {
     private RAM RAM;
     private HDD HDD;
 
-
     public Computer(long price, String model) {
         this.price = price;
         this.model = model;
