@@ -38,7 +38,6 @@ public class CashMachineService {
             arrayMoney[3] = 1;
         }
 
-
         return arrayMoney;
     }
 }
