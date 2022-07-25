@@ -8,7 +8,6 @@ import java.util.Scanner;
 public class Starter {
     public static void main(String[] args) {
         CashMachine cashMachine = new CashMachine(15, 20, 30);
-
         Scanner scanner = new Scanner(System.in);
         CashMachineService cashMachineService = new CashMachineService();
 
@@ -36,6 +35,7 @@ public class Starter {
                     cashMachine.setAmount20(arrayMoney[0]);
                     cashMachine.setAmount50(arrayMoney[1]);
                     cashMachine.setAmount100(arrayMoney[2]);
+
                     if (arrayMoney[3] == 1) {
                         System.out.println("Операция выполнена успешно");
                     }

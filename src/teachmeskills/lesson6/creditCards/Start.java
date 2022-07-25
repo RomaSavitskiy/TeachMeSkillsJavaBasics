@@ -1,7 +1,7 @@
-package teachmeskills.lesson6.CreditCards;
+package teachmeskills.lesson6.creditCards;
 
-import teachmeskills.lesson6.CreditCards.entity.CreditCard;
-import teachmeskills.lesson6.CreditCards.service.CreditCardService;
+import teachmeskills.lesson6.creditCards.entity.CreditCard;
+import teachmeskills.lesson6.creditCards.service.CreditCardService;
 
 import java.util.Scanner;
 
@@ -31,7 +31,7 @@ public class Start {
             boolean flag = true;
 
             while (numberOfCard < 1 || numberOfCard > 4) {
-                if(flag == false) {
+                if (flag == false) {
                     System.out.println("Введите корректное значение");
                 }
                 flag = false;
@@ -40,13 +40,11 @@ public class Start {
 
             CreditCardService creditCardService = new CreditCardService();
 
-            if(numberOfCard == 4) {
-
+            if (numberOfCard == 4) {
                 for (int i = 0; i < arrayCard.length; i++) {
                     creditCardService.infoAboutCard(arrayCard[i].getCardNumber(), arrayCard[i].getCardBalance());
                     System.out.println();
                 }
-
             }
             else {
                 numberOfCard -= 1;
@@ -60,22 +58,26 @@ public class Start {
                 byte numberOfOperation = 0;
 
                 while (numberOfOperation < 1 | numberOfOperation > 3) {
-                    if(flag == false) {
+                    if (flag == false) {
                         System.out.println("Введите корректное значение");
                     }
+
                     flag = false;
 
                     numberOfOperation = scanner.nextByte();
 
                     switch (numberOfOperation) {
                         case 1:
-                            arrayCard[numberOfCard].setCardBalance(creditCardService.increaseCardBalance(arrayCard[numberOfCard].getCardBalance()));
+                            arrayCard[numberOfCard].setCardBalance(creditCardService.increaseCardBalance
+                                    (arrayCard[numberOfCard].getCardBalance()));
                             break;
                         case 2:
-                            arrayCard[numberOfCard].setCardBalance(creditCardService.decreaseCardBalance(arrayCard[numberOfCard].getCardBalance()));
+                            arrayCard[numberOfCard].setCardBalance(creditCardService.decreaseCardBalance
+                                    (arrayCard[numberOfCard].getCardBalance()));
                             break;
                         case 3:
-                            creditCardService.infoAboutCard(arrayCard[numberOfCard].getCardNumber(), arrayCard[numberOfCard].getCardBalance());
+                            creditCardService.infoAboutCard(arrayCard[numberOfCard].getCardNumber(),
+                                    arrayCard[numberOfCard].getCardBalance());
                     }
                 }
             }

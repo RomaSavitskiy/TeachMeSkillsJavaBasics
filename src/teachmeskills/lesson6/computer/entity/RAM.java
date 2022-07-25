@@ -1,12 +1,10 @@
-package teachmeskills.lesson6.Computer.entity;
+package teachmeskills.lesson6.computer.entity;
 
 public class RAM {
-
     private String nameRAM;
     private int sizeRAM;
 
     public RAM() {
-
     }
 
     public RAM(String nameRAM, int sizeRAM) {

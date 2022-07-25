@@ -1,4 +1,4 @@
-package teachmeskills.lesson6.CreditCards.entity;
+package teachmeskills.lesson6.creditCards.entity;
 
 public class CreditCard {
 
@@ -10,9 +10,7 @@ public class CreditCard {
         this.cardBalance = cardBalance;
     }
 
-    public CreditCard()
-    {
-
+    public CreditCard() {
     }
 
     public void setCardNumber(String cardNumber) {
@@ -30,5 +28,4 @@ public class CreditCard {
     public int getCardBalance() {
         return cardBalance;
     }
-
 }

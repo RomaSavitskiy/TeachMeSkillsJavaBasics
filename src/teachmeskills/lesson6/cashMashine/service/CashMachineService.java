@@ -30,8 +30,8 @@ public class CashMachineService {
         amountWithdrawal50 = scanner.nextLong();
         amountWithdrawal100 = scanner.nextLong();
 
-        if ((arrayMoney[0] >= amountWithdrawal20) & (arrayMoney[1] >= amountWithdrawal50)
-                & ( arrayMoney[2] >= amountWithdrawal100)) {
+        if ((arrayMoney[0] >= amountWithdrawal20) & (arrayMoney[1] >= amountWithdrawal50) &
+                ( arrayMoney[2] >= amountWithdrawal100)) {
             arrayMoney[0] -= amountWithdrawal20;
             arrayMoney[1] -= amountWithdrawal50;
             arrayMoney[2] -= amountWithdrawal100;

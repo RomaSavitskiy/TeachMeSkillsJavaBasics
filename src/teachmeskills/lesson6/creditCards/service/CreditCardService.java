@@ -1,4 +1,4 @@
-package teachmeskills.lesson6.CreditCards.service;
+package teachmeskills.lesson6.creditCards.service;
 
 import java.util.Scanner;
 

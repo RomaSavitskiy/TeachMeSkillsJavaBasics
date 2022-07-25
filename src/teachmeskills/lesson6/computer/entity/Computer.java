@@ -1,4 +1,4 @@
-package teachmeskills.lesson6.Computer.entity;
+package teachmeskills.lesson6.computer.entity;
 
 public class Computer {
 
