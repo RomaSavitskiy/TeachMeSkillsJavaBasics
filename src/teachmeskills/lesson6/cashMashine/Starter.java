@@ -18,8 +18,9 @@ public class Starter {
             System.out.println("Количество купюр по 100 - " + cashMachine.getAmount100());
             System.out.println("Выберите тип операции:");
             System.out.println("1) Внесение купюр");
+            System.out.println("2) Снятие купюр");
 
-            long arrayMoney[] = {cashMachine.getAmount20(), cashMachine.getAmount50(), cashMachine.getAmount100()};
+            long arrayMoney[] = {cashMachine.getAmount20(), cashMachine.getAmount50(), cashMachine.getAmount100(), 0};
 
             byte idOperations = scanner.nextByte();
 
@@ -35,6 +36,12 @@ public class Starter {
                     cashMachine.setAmount20(arrayMoney[0]);
                     cashMachine.setAmount50(arrayMoney[1]);
                     cashMachine.setAmount100(arrayMoney[2]);
+                    if (arrayMoney[3] == 1) {
+                        System.out.println("Операция выполнена успешно");
+                    }
+                    else {
+                        System.out.println("Операция выполнена неудачно");
+                    }
                     break;
             }
         }
