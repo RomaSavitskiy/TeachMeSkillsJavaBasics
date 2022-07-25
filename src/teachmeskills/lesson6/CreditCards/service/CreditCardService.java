@@ -3,7 +3,6 @@ package teachmeskills.lesson6.CreditCards.service;
 import java.util.Scanner;
 
 public class CreditCardService {
-
     Scanner scanner = new Scanner(System.in);
 
     public int increaseCardBalance(int cardBalance) {

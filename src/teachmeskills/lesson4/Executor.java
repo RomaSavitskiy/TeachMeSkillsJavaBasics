@@ -2,8 +2,10 @@ package teachmeskills.lesson4;
 
 import java.util.Arrays;
 import java.util.Scanner;
+
 public class Executor {
     Scanner scanner = new Scanner(System.in);
+
     public void examinationOccurrencesSymbol()
     {
         int[] array = {1, 2, 3, 4, 5, 6, 8};

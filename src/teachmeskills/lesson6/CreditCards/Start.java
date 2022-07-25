@@ -6,9 +6,7 @@ import teachmeskills.lesson6.CreditCards.service.CreditCardService;
 import java.util.Scanner;
 
 public class Start {
-
     public static void main(String[] args) {
-
         Scanner scanner = new Scanner(System.in);
 
         CreditCard creditCard1 = new CreditCard("1255 8014 3212 5443", 100);
