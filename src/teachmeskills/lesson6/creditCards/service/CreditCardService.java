@@ -10,9 +10,11 @@ public class CreditCardService {
         System.out.println("Введите сумму начисления ");
 
         int increaseValue = scanner.nextInt();
+        
         cardBalance += increaseValue;
 
         System.out.println("Теперь баланс состовляет: " + cardBalance);
+        
         return cardBalance;
     }
 
@@ -21,9 +23,11 @@ public class CreditCardService {
         System.out.println("Введите сумму отчисления ");
 
         int increaseValue = scanner.nextInt();
+        
         cardBalance -= increaseValue;
 
         System.out.println("Теперь баланс состовляет: " + cardBalance);
+        
         return cardBalance;
     }
 
