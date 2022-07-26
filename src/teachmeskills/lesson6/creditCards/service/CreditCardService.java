@@ -22,9 +22,9 @@ public class CreditCardService {
         System.out.println("Текущий баланс: " + cardBalance);
         System.out.println("Введите сумму отчисления ");
 
-        int increaseValue = scanner.nextInt();
+        int decreaseValue = scanner.nextInt();
         
-        cardBalance -= increaseValue;
+        cardBalance -= decreaseValue;
 
         System.out.println("Теперь баланс состовляет: " + cardBalance);
         
