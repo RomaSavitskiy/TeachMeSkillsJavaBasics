@@ -1,7 +1,6 @@
 package teachmeskills.lesson6.computer.entity;
 
 public class HDD {
-
     private String nameHDD;
     private long sizeHDD;
     private String typeHDD;
