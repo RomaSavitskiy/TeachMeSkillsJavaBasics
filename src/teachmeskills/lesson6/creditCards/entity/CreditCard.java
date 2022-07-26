@@ -1,7 +1,6 @@
 package teachmeskills.lesson6.creditCards.entity;
 
 public class CreditCard {
-
     private String cardNumber;
     private int cardBalance;
 
