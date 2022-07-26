@@ -4,7 +4,6 @@ import java.util.Arrays;
 
 public class Executor
 {
-
     public void outputSquare()
     {
         int[][] array = {{1,2,4,4}, {1,1,1,10}, {0,3,4,6}};
@@ -57,7 +56,6 @@ public class Executor
             System.out.println(sum);
             sum = 0;
         }
-
     }
 
     public void comparisonArrays()
@@ -99,9 +97,11 @@ public class Executor
                     min = array1[i][j];
                 }
             }
+            
             System.out.print(min + " ");
             min = array1[i][0];
         }
+        
         System.out.println();
         System.out.println();
     }
@@ -131,6 +131,7 @@ public class Executor
             for (int j = 0; j <= 3; j++) {
                 System.out.print(array[i][j] + " ");
             }
+            
             System.out.println();
         }
     }
@@ -177,7 +178,6 @@ public class Executor
     public void setColourInChess()
     {
         String[][] array = new String[8][8];
-
         boolean flag = false;
 
         for(int i = 0; i < array.length; i++)
@@ -227,6 +227,7 @@ public class Executor
             {
                 System.out.print(array2[i][j] + " ");
             }
+            
             System.out.println();
         }
 
@@ -250,6 +251,7 @@ public class Executor
             {
                 System.out.print(array3[i][j] + " ");
             }
+            
             System.out.println();
         }
     }
@@ -257,7 +259,6 @@ public class Executor
     public void sumMatrixElem()
     {
         int[][] array = {{1,2,3}, {4,5,6}, {7,8,9}};
-
         int sum = 0;
 
         System.out.println("Дан массив: ");
@@ -268,6 +269,7 @@ public class Executor
             {
                 System.out.print(array[i][j] + " ");
             }
+            
             System.out.println();
         }
 
@@ -284,7 +286,6 @@ public class Executor
 
     public void outputDiagonalsOfMatrix()
     {
-
         int[][] array = {{1, 2, 3}, {4, 5, 6}, {7, 8, 9}};
         int d = 0;
 
@@ -294,6 +295,7 @@ public class Executor
             {
                 System.out.print(array[i][j] + " ");
             }
+            
             System.out.println();
         }
 
@@ -311,7 +313,6 @@ public class Executor
         {
             System.out.print(array[i][(array.length - 1) - i] + " ");
         }
-
         System.out.println();
     }
 
@@ -327,6 +328,7 @@ public class Executor
             {
                 System.out.print(array[i][j] + " ");
             }
+            
             Arrays.sort(array[i]);
             System.out.println();
         }
@@ -340,6 +342,7 @@ public class Executor
             {
                 System.out.print(array[i][j] + " ");
             }
+            
             System.out.println();
         }
     }
