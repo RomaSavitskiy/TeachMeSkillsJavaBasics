@@ -1,7 +1,6 @@
 package teachmeskills.lesson6.computer.entity;
 
 public class Computer {
-
     private long priceComputer;
     private String modelComputer;
     private RAM ramComputer;
