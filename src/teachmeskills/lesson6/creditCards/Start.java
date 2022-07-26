@@ -12,6 +12,7 @@ public class Start {
         CreditCard creditCard1 = new CreditCard("1255 8014 3212 5443", 100);
 
         CreditCard creditCard2 = new CreditCard();
+        
         creditCard2.setCardNumber("2255 8014 3212 5443");
         creditCard2.setCardBalance(200);
 
@@ -20,7 +21,6 @@ public class Start {
         CreditCard[] arrayCard = {creditCard1, creditCard2, creditCard3};
 
         while (true) {
-
             System.out.println("Выберите кредитную карту");
             System.out.println("1) " + creditCard1.getCardNumber());
             System.out.println("2) " + creditCard2.getCardNumber());
@@ -43,6 +43,7 @@ public class Start {
             if (numberOfCard == 4) {
                 for (int i = 0; i < arrayCard.length; i++) {
                     creditCardService.infoAboutCard(arrayCard[i].getCardNumber(), arrayCard[i].getCardBalance());
+                    
                     System.out.println();
                 }
             }
