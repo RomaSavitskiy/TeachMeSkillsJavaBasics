@@ -1,7 +1,6 @@
 package teachmeskills.lesson6.cashMashine.entity;
 
 public class CashMachine {
-
     private long amount20;
     private long amount50;
     private long amount100;
