@@ -1,7 +1,6 @@
 package teachmeskills.lesson7.DocumentSystem;
 
 import teachmeskills.lesson7.DocumentSystem.document.Document;
-
 import java.util.Scanner;
 
 public class Register {

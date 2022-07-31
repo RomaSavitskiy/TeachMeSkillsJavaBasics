@@ -1,7 +1,6 @@
 package teachmeskills.lesson7.figures;
 
 public class Figure implements PerimeterAndSquareFindable {
-
     public Figure() {
     }
 
