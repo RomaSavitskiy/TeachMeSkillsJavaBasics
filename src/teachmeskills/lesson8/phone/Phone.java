@@ -1,9 +1,9 @@
 package teachmeskills.lesson8.phone;
 
 public class Phone {
-    int numberPhone;
-    String modelPhone;
-    int weightPhone;
+    private int numberPhone;
+    private String modelPhone;
+    private int weightPhone;
 
     public Phone(int numberPhone, String modelPhone, int weightPhone) {
         this.numberPhone = numberPhone;
