@@ -1,5 +1,12 @@
 package teachmeskills.lesson10.documentNumber.Service;
 
+import teachmeskills.lesson10.documentNumber.exception.WrongWithEndOfNumber;
+import teachmeskills.lesson10.documentNumber.exception.WrongWithNumberConstruction;
+import teachmeskills.lesson10.documentNumber.exception.WrongWithStartDocumentFromFive;
+
+import java.util.stream.Stream;
+import java.util.zip.DataFormatException;
+
 public class DocumentNumberService {
     public static void printFirstTwoBlockWithNumber(String string) {
         char[] arrayChar = string.toCharArray();
@@ -70,30 +77,60 @@ public class DocumentNumberService {
         System.out.println();
     }
 
-    public static void checkAbcInString(String string) {
+    public static void checkAbcInString(final String string) throws WrongWithNumberConstruction {
         if (string.contains("abc") | string.contains("ABC")) {
             System.out.println("Содержит");
         }
         else {
             System.out.println("Не содержит");
+            throw new WrongWithNumberConstruction("Номер не соответсвует параметрам");
         }
     }
 
-    public static void checkStartOfString(String string) {
+    public static void checkStartOfString(String string) throws WrongWithStartDocumentFromFive {
         if (string.startsWith("555")) {
             System.out.println("Начинается");
         }
         else {
             System.out.println("Не начинается");
+            throw new WrongWithStartDocumentFromFive("Номер не соответсвует параметрам");
         }
     }
 
-    public static void checkEndOfString(String string) {
+    public static void checkEndOfString(String string) throws WrongWithEndOfNumber {
         if (string.endsWith("1a2b")) {
             System.out.println("Заканчивается");
         }
         else {
             System.out.println("Не заканчивается");
+            throw new WrongWithEndOfNumber("Номер не соответсвует параметрам");
+        }
+    }
+
+    String documentNumberOne = "0123-vbc-4567-def-819h";
+
+    StringBuilder stringBuilder = new StringBuilder(documentNumberOne);
+    public void execute() {
+        printNumberWithoutLetters(documentNumberOne);
+        printOnlyLetters(documentNumberOne);
+        printOnlyLettersUpCase(documentNumberOne);
+
+        try {
+            checkAbcInString(documentNumberOne);
+        } catch (WrongWithNumberConstruction e) {
+            e.printStackTrace();
+        }
+
+        try {
+            checkStartOfString(documentNumberOne);
+        } catch (WrongWithStartDocumentFromFive e) {
+            e.printStackTrace();
+        }
+
+        try {
+            checkEndOfString(documentNumberOne);
+        } catch (WrongWithEndOfNumber e) {
+            e.printStackTrace();
         }
     }
 }
