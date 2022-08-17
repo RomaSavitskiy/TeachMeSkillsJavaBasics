@@ -19,12 +19,12 @@ public class DataService {
             throw new WrongLoginException("Incorrect password data");
         }
 
-        char[] arrayChar = password.toCharArray();
         boolean flag = false;
 
         for (int i = 0; i < passwordLength; i++) {
-            if (((int)password.charAt(i) > 47) & ((int)password.charAt(i) < 59)) {
+            if (((int) password.charAt(i) > 47) & ((int) password.charAt(i) < 59)) {
                 flag = true;
+                break;
             }
         }
 

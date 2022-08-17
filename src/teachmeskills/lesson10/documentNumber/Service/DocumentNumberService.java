@@ -4,9 +4,6 @@ import teachmeskills.lesson10.documentNumber.exception.WrongWithEndOfNumber;
 import teachmeskills.lesson10.documentNumber.exception.WrongWithNumberConstruction;
 import teachmeskills.lesson10.documentNumber.exception.WrongWithStartDocumentFromFive;
 
-import java.util.stream.Stream;
-import java.util.zip.DataFormatException;
-
 public class DocumentNumberService {
     public static void printFirstTwoBlockWithNumber(String string) {
         char[] arrayChar = string.toCharArray();
