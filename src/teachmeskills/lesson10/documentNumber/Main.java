@@ -1,7 +1,9 @@
 package teachmeskills.lesson10.documentNumber;
 
 import teachmeskills.lesson10.documentNumber.Service.DocumentNumberService;
+import teachmeskills.lesson10.documentNumber.exception.WrongWithNumberConstruction;
 
+import java.io.InvalidClassException;
 import java.util.Scanner;
 
 public class Main {
@@ -10,16 +12,6 @@ public class Main {
 
         DocumentNumberService documentNumberService = new DocumentNumberService();
 
-        String documentNumberOne = "0123-abc-4567-def-8g9h";
-
-        documentNumberService.printFirstTwoBlockWithNumber(documentNumberOne);
-        documentNumberService.printNumberWithoutLetters(documentNumberOne);
-        documentNumberService.printOnlyLetters(documentNumberOne);
-        documentNumberService.printOnlyLettersUpCase(documentNumberOne);
-        documentNumberService.checkAbcInString(documentNumberOne);
-        documentNumberService.checkStartOfString(documentNumberOne);
-        documentNumberService.checkEndOfString(documentNumberOne);
-
-        StringBuilder stringBuilder = new StringBuilder(documentNumberOne);
+        documentNumberService.execute();
     }
 }
